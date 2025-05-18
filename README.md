@@ -24,3 +24,4 @@ Dataset used: [rahular/simple-wikipedia](https://huggingface.co/datasets/rahular
 ### Other Observations
 1. Increasing VRAM freq by 700 MHz improved training speed by 10%, but stability is not guaranteed(loss went to NaN when overclocked by 800 MHz).
 2. MLA takes 10% less params than MHA and is slightly faster with only slight reduction in loss despite latent dim being half of embedding dim
+3. Making the model generate to context lengths it hasn't often seen in training leads to gradual decent into gibberish. This is expected, but the smooth deterioration is interesting.

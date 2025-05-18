@@ -7,6 +7,7 @@ Implemented and pre-trained GPT from scratch, trained on Wikipedia and some Shak
 2. Attention heads: 12
 3. Number of decoders: 10
 4. Embedding dim: 768
+5. Character tokenizer
 
 ### Tweaks
 1. Trained with DynamicTanh instead of LayerNorm and SwiGLU activation instead of ReLU as well. DyTanh is from a [2025 paper](https://arxiv.org/pdf/2503.10622) co-authored by Yann Lecunn, aims to reduce computational cost for maintained performance.
